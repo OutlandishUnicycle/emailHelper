@@ -1,5 +1,5 @@
 const transporter = require('./mailSetup');
-const email = require('../secret.js').email;
+const email = process.env.email;
 //
 
 const mailOptions = (giverEmail, giverName, takerEmail, takerName) => ({

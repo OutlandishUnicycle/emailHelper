@@ -1,8 +1,8 @@
 const fetch = require('isomorphic-fetch');
 const nm = require('nodemailer');
 
-const pw = process.env.emailPassword || require('../secret.js').emailPassword;
-const email = process.env.email || require('../secret.js').email;
+const pw = process.env.emailPassword;
+const email = process.env.email;
 
 const smtpConfig = {
   host: 'smtp.gmail.com',
