@@ -9,7 +9,7 @@ const mailOptions = (giverEmail, giverName, takerEmail, takerName) => ({
     text: `
     Hello, ${giverName}!
 
-    ${takerName} has requested to take you item. Please send them a message at: ${takerEmail}.
+    ${takerName} has requested to take your item. Please send them a message at: ${takerEmail}.
 
     Thanks for working with discollect!
 
