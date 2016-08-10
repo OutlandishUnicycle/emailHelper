@@ -4,6 +4,8 @@ const nm = require('nodemailer');
 const pw = process.env.emailPassword;
 const email = process.env.email;
 
+
+
 const smtpConfig = {
   host: 'smtp.gmail.com',
   port: 465,

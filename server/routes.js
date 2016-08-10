@@ -13,8 +13,7 @@ router.get('/messageQueue', (req, res) => {
 // this will add a message to the queue
 // giverEmail, giverUsername, takerEmail, takerUsername
 router.post('/messageQueue', (req, res) => {
-  _h.sendMessage(req.body.giverEmail, req.body.giverUsername, req.body.takerEmail, req.body.takerUsername);
-  res.send('sent!');
+  _h.sendMessage(req.body.giverEmail, req.body.giverUsername, req.body.takerEmail, req.body.takerUsername, req.body.itemname, res);
 });
 
 module.exports = router;
