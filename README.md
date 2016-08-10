@@ -3,10 +3,19 @@
 ##End points
 
 ###/api/messageQueue
-Send in lat and lng coords and receive back an associated zipcode
+Send post to send email to designated recipient
 ####SAMPLE:
 POST request:
-/api/zip?lng=-91.4821482&lat=44.95309659999999
+/api/messageQueue
+
+Request body:
+{
+    "giverEmail": "giver@email.com",
+    "giverUsername": "giver username",
+    "takerEmail": "taker@email.com",
+    "takerUsername": "taker username",
+    "itemname": "a thing"
+}
 
 Response:
-19525
+"message sent to giver@email.com"
