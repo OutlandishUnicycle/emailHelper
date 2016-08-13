@@ -5,6 +5,8 @@ const closedTakerEmail = require('../templates/toTakerClose');
 
 
 const email = process.env.email;
+// const email = 'discollect123@gmail.com';
+
 
 const transporterSendMessage = (message) => {
   transporter.sendMail(message, function(error, info){
@@ -29,7 +31,7 @@ const sendTakenMessage = (gEmail, gUsername, tEmail, tUsername, itemname) => {
 const sendClosedMessage = (gUsername, tEmail, tUsername, itemname) => {
   let closedMessage = closedTakerEmail(gUsername, tEmail, tUsername, itemname);
 
-  giverMessage.from = `"discollect staff" <${email}>`;
+  closedMessage.from = `"discollect staff" <${email}>`;
 
   transporterSendMessage(closedMessage);
 }
