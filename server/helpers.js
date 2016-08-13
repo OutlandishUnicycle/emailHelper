@@ -26,7 +26,7 @@ const sendTakenMessage = (gEmail, gUsername, tEmail, tUsername, itemname) => {
   transporterSendMessage(takerMessage);
 }
 
-const closedTakerEmail = (gUsername, tEmail, tUsername, itemname) => {
+const sendClosedMessage = (gUsername, tEmail, tUsername, itemname) => {
   let closedMessage = closedTakerEmail(gUsername, tEmail, tUsername, itemname);
 
   giverMessage.from = `"discollect staff" <${email}>`;
@@ -36,5 +36,5 @@ const closedTakerEmail = (gUsername, tEmail, tUsername, itemname) => {
 
 module.exports = {
   sendTakenMessage,
-  closedTakerEmail
+  sendClosedMessage
 };
