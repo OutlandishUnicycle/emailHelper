@@ -36,5 +36,5 @@ const closedTakerEmail = (gUsername, tEmail, tUsername, itemname) => {
 
 module.exports = {
   sendTakenMessage,
-  sendClosedMessage
+  closedTakerEmail
 };
